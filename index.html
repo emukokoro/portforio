@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+
+		<link href="style.css" rel="stylesheet" >
+		<link href="responsive.css" rel="stylesheet">
+		<title>えむこころ'S Portforio</title>
+	</head>
+	<body>
+		<header>
+			<a href="index.html"><img src="images/logo_03.png" alt="logo" class="logo"></a>
+			<!--pc--->
+			<div id="menu-pc">
+				<nav class="main-nav">
+					<ul>
+						<li><a href="about.html"><img src="images/about.png"></a></li>
+						<li><a href="works.html"><img src="images/Works.png"></a></li>
+						<li><a href="http://emukokoroblog-g59.com/"><img src="images/blog.png"></a></li>
+					</ul>
+				</nav>
+			</div><!--menu-pc-->
+			
+			<!--mobile--->	
+			<div id ="menu-sumafo">
+				<input type="checkbox" id="check">
+				<label for="check">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</label>
+				<div id="sumafo-nav">
+					<nav >
+						<ul>
+							<li><a href="about.html"><img src="images/about.png" ></a></li>
+							<li><a href="works.html"><img src="images/Works.png" ></a></li>
+							<li><a href="http://emukokoroblog-g59.com/"><img src="images/blog.png" ></a></li>
+						</ul>
+					</nav>
+				</div><!-- sumafo-nav-->
+			</div><!-- menu-sumafo-->
+		</header>
+
+		<div class="container1">
+			<div class="big-image">
+				<img src="images/main-sentence.png" alt="メイン文章" class="main" >
+			</div>
+		</div>
+		<div class="container2">		
+			<a href="about.html"><img src="images/letter-about-cl.png" alt="about-me" id="about" onmouseover="mouseOn();" onmouseout="mouseOff();" /></a>
+			<a href="works.html"><img src="images/letter-works-cl.png" alt="my-works" id="works" onmouseover="mouseOn2();" onmouseout="mouseOff2();"/>
+			<a href="http://emukokoroblog-g59.com/"><img src="images/letter-blog-cl.png" alt="my-blog" id="blog" onmouseover="mouseOn3();" onmouseout="mouseOff3();"/>
+		</div>
+		<footer>
+			&copy;Emukokoro
+		</footer>
+		<script type="text/javascript">
+							//マウスオーバー時の処理
+			function mouseOn(){
+				let about = document.getElementById("about");
+				about.src = "images/letter-about.png";
+			}
+
+			//マウスアウト時の処理
+
+			function mouseOff(){
+				let about = document.getElementById("about");
+				about.src = "images/letter-about-cl.png";
+			}
+
+
+			function mouseOn2(){
+				let works = document.getElementById("works");
+				works.src = "images/letter-works.png";
+			}
+
+			function mouseOff2(){
+				let works = document.getElementById("works");
+				works.src = "images/letter-works-cl.png";
+			}
+
+			//マウスアウト時の処理
+
+			function mouseOff3(){
+				let blog = document.getElementById("blog");
+				blog.src = "images/letter-blog-cl.png";
+			}
+
+			function mouseOn3(){
+				let blog = document.getElementById("blog");
+				blog.src = "images/letter-blog.png";
+			}
+		</script>
+
+		
+	</body>
+</html>

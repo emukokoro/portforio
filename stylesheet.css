@@ -1,0 +1,60 @@
+@media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
+
+  header {
+  background-color: #66645f;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  }
+
+  .logo {
+      width: 100px;
+      height: 100px;
+  }
+
+  .line {
+      width: 20px;
+      height: 3px;
+      margin: 6px;
+      background-color: white;
+  }
+
+  .menu-sumafo ul {
+  list-style-type: none;  
+
+  }
+
+  .sumafo-nav{
+      background-color: pink;
+      width: 150px;
+      height: 100%;
+      transform: translateX(100px);
+  }
+  #input:checked ~ .sumafo-nav{
+      transform: translateX(-50px);
+  }
+
+  .menu-pc {
+      display: none;
+  }
+
+  .main{
+      display: none;
+  }
+
+
+  .container2 {
+      background-color: #f8f4e6;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+  }
+
+
+  footer {
+      background-color: #66645f;
+      
+      height: 100px;
+  }  
+
+}

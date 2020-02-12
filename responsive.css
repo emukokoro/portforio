@@ -1,0 +1,119 @@
+/*モバイル*/
+/*ウィンドウ幅が最大479pxまでの場合に適用*/
+@media screen and (max-width: 479px) { 
+  
+  body {
+  margin: 0 auto ;
+  min-height: 768px;
+  min-width: 479px;
+  }
+
+  header {
+  background-color: #66645f;
+  max-height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  }
+
+  .logo {
+  width: 100px;
+  height: 100px;
+  }
+
+  .main-nav ul li{
+  margin: 0 auto; 
+  display: inline-block;
+  list-style: none;
+  flex 1;
+  padding: 20px;
+  }
+
+  /*#check{
+  display: none;
+  }*/
+  .line{
+  width: 20px;
+  height: 3px;
+  background-color: white;
+  margin: 3px;
+  }
+
+  #sumafo-nav {
+  float: right;
+  background-color: pink;
+  width: 150px;
+  transform: translateX(150px);
+  }
+
+  #menu-sumafo ul {
+  list-style-type: none;  
+
+  }
+
+  input:checked ~ #sumfo-nav{
+  transform: translateX(px);
+  }
+
+  .container1 {
+  display: none;
+  }
+
+  .container2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+}
+
+/*モバイルここまで*/
+
+/*タブレット向け*/
+/*ウィンドウ幅が768px以上の場合に適用*/
+@media screen and (min-width: 768px) {
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+  #menu-sumafo{
+    display: none;
+  }
+
+  .logo {
+  width: 100px;
+  height: 100px;
+  }
+
+  .container1 {
+  background-color: #f8f4e6;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 568px;
+  }
+
+  .container2 {
+  background-color: #f8f4e6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  }
+
+  .main{
+    flex: 0 1 auto;
+  }
+
+}
+
+
+
+
+
+
+
