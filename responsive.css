@@ -1,11 +1,11 @@
 /*モバイル*/
 /*ウィンドウ幅が最大479pxまでの場合に適用*/
-@media screen and (max-width: 479px) { 
+@media screen and (max-width: 599px) { 
   
   body {
   margin: 0 auto ;
-  min-height: 768px;
-  min-width: 479px;
+  max-height: 768px;
+  max-width: 599px;
   }
 
   header {
@@ -24,13 +24,14 @@
   margin: 0 auto; 
   display: inline-block;
   list-style: none;
-  flex 1;
+  flex: 1;
   padding: 20px;
   }
 
   /*#check{
   display: none;
   }*/
+  
   .line{
   width: 20px;
   height: 3px;
@@ -50,8 +51,8 @@
 
   }
 
-  input:checked ~ #sumfo-nav{
-  transform: translateX(px);
+  input:checked ~ #sumafo-nav{
+  transform: translateX(-150px);
   }
 
   .container1 {

@@ -41,7 +41,7 @@ header {
 	margin: 0 auto;	
 	display: inline-block;
 	list-style: none;
-	flex 1;
+	flex: 1;
 	padding: 20px;
 }
 
