@@ -33,3 +33,4 @@ function mouseOn3(){
 	let blog = document.getElementById("blog");
 	blog.src = "images/letter-blog.png";
 }
+

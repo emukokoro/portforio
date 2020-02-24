@@ -1,6 +1,6 @@
 /*モバイル*/
 /*ウィンドウ幅が最大479pxまでの場合に適用*/
-@media screen and (max-width: 599px) { 
+@media (max-width: 599px) { 
   
   body {
   margin: 0 auto ;
@@ -71,14 +71,25 @@
 
 /*タブレット向け*/
 /*ウィンドウ幅が768px以上の場合に適用*/
-@media screen and (min-width: 768px) {
-
-  header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
+@media  (min-width: 600px) and (max-width: 768px) {
+  body{
+    margin-left: auto;
+	  margin-right: auto;
   }
+  
+  header {
+    background-color: #66645f;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .main-nav ul li{
+	margin: 0 auto;	
+	display: inline-block;
+	list-style: none;
+	flex: 1;
+	padding: 20px;
+}
 
   #menu-sumafo{
     display: none;
@@ -89,15 +100,15 @@
   height: 100px;
   }
 
-  .container1 {
-  background-color: #f8f4e6;
-  display: flex;
-  flex-direction: column; 
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 568px;
-  }
+  /*.container1 {*/
+  /*background-color: #f8f4e6;*/
+  /*display: flex;*/
+  /*flex-direction: column; */
+  /*align-items: center;*/
+  /*justify-content: center;*/
+  /*width: 100%;*/
+  /*height: 568px;*/
+  /*}*/
 
   .container2 {
   background-color: #f8f4e6;
@@ -109,11 +120,187 @@
   .main{
     flex: 0 1 auto;
   }
+  
+  footer {
+	background-color: #66645f;
+	max-width: 100%;
+	height: 50px;
+}
 
 }
 
 
+/*PC向け*/
+/*ウィンドウ幅が960px以上の場合に適用*/
+@media (min-width: 769px) {
+  /*
+Theme Name: emukokoro_portforio
+Author: emukokoro
+Author URI:
+Description:ポートフォリオ
+version: 1.0
+*/
 
+
+/*共通*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	max-width: 1369px;
+	max-height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header {
+	background-color: #66645f;
+	max-width: 1369px;
+	max-height: 100px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	
+}
+
+#menu-sumafo{
+    display: none;
+  }
+
+
+.logo {
+	width: 80px;
+	height: 80px;
+	position: fixed;
+}
+
+
+.main-nav ul li{
+	margin: 0 auto;	
+	display: inline-block;
+	list-style: none;
+	flex: 1;
+	padding: 20px;
+}
+
+/*index.htmlここから*/
+
+.container1 {
+	max-width: 1369px;
+	max-height: 568px;
+	background-color: #f8f4e6;
+	display: flex;
+	flex-direction: column; 
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 568px;
+}
+
+.main{
+	flex: 0 1 auto;
+	width: 900px;
+}
+
+.container2 {
+	max-width: 1369px;
+	max-height: 568px;
+	background-color: #f8f4e6;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.pearl {
+	flex: 0 0 auto;
+	width: 201px;
+	height: 197px;
+	
+}
+
+.toriton {
+	flex: 0 0 auto;
+	width: 200px;
+	height: 197px;	
+}
+
+.terasaka {
+	flex: 0 0 auto;
+	width: 201px;
+	height: 197px;
+}
+
+footer {
+	background-color: #66645f;
+	max-width: 1369px;
+	height: 100px;
+}
+/*index.htmlここまで*/
+
+/*about.htmlここから*/
+.container-about{
+	display: flex;
+	flex-direction: column; 
+	align-items: center;
+	justify-content: center;
+	max-width: 1369px;
+	height: 350px;
+	background-color: #f8f4e6;
+}
+
+.container-about , article {
+	flex: 0 3 auto;
+}
+
+.container-me{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	max-width: 1369px;
+	height: 370px;
+	background-color: #f8f4e6;
+}
+
+.section2 , img {
+	flex: 1
+}
+
+.section2 , p {
+	flex: 2
+}
+/*work.htmlここから*/
+
+#wrapper-works{
+	background-color: #f8f4e6;
+	max-width: 1369px;
+	overflow: scroll; 
+	height: 100vh; /* 縦スクロールのためこれを追加 */
+	padding-left: 100px;
+}
+
+#wrapper-works >ul > li {
+  list-style-type: none;
+  margin-bottom: 120px;
+
+}
+
+#wrapper-works > h2{
+	margin: 0 0 70px 0;
+	font-size: 46px;
+	text-align: left;
+}
+
+.container-hp{
+	display: flex;
+	flex-direction: column;
+}
+
+
+}
 
 
 
