@@ -105,12 +105,15 @@
   body{
     margin-left: auto;
 	  margin-right: auto;
+	  background-color: #f8f4e6;
+	  height: 1024px;
   }
   
   header {
     background-color: #66645f;
     display: flex;
     justify-content: space-between;
+    height: 80px;
   }
   
   .main-nav ul li{
@@ -125,9 +128,14 @@
     display: none;
   }
 
-  .logo {
-  width: 100px;
-  height: 100px;
+ .logo {
+	width: 80px;
+	height: 80px;
+	position: fixed;
+}
+  
+  .container1 {
+  display: none;
   }
 
   /*.container1 {*/
@@ -141,6 +149,7 @@
   /*}*/
 
   .container2 {
+  margin:30px;
   background-color: #f8f4e6;
   display: flex;
   flex-direction: row;
